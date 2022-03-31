@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2e2e2e;
+  position: relative;
+}
+.alink {
+  text-decoration: none;
+  color: whitesmoke;
+  font-family: 'Seculer One', sans-serif;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 2px solid whitesmoke;
+  font-size: 90%;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: background-color 0.3s;
+}
+.alink:hover{
+  background-color: tomato;
+  cursor: crosshair;
+}
+.progress_bar{
+  height: 50px;
+  width: 500px;
+  border-radius: 5px;
+  background-color: tomato;
+  box-shadow: inset 0px 0px 0px 0px #000000a1;
+  margin-top: 130px;
+  position: absolute;
+  border: 2px solid whitesmoke;
+}
+.progress{
+  height: 100%;
+  width: 25%;
+  background-image: linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0.3) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0.3) 75%,
+    transparent 75%,
+    transparent
+  );
+  background-color: tomato;
+  background-size: 30px 30px;
+  border-radius: 5px;
+  animation: slide 5s linear infinite;
+}
+.percentage{
+  position: relative;
+  left: 250px;
+  top: 13px;
+  color: white;
+  font-weight: bold;
+  font-family: 'Seculer One', sans-serif;
+  font-size: 120%;
+}
+@keyframes slide {
+  0%{
+    background-position: 0 0;
+  }
+  100%{
+    background-position: 100% 100%;
+  }
+}
+/**/.progress_bar2{
+  height: 50px;
+  width: 500px;
+  border-radius: 5px;
+  background-color: tomato;
+  box-shadow: inset 0px 0px 0px 0px #000000a1;
+  margin-top: 250px;
+  position: absolute;
+  border: 2px solid whitesmoke;
+}
+.progress2{
+  height: 100%;
+  width: 50%;
+  background-image: linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0.3) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0.3) 75%,
+    transparent 75%,
+    transparent
+  );
+  background-color: tomato;
+  background-size: 30px 30px;
+  border-radius: 5px;
+  animation: slide2 5s linear infinite;
+}
+.percentage2{
+  position: relative;
+  left: 250px;
+  top: 13px;
+  color: white;
+  font-weight: bold;
+  font-family: 'Seculer One', sans-serif;
+  font-size: 120%;
+}
+@keyframes slide2 {
+  0%{
+    background-position: 0 0;
+  }
+  100%{
+    background-position: 100% 100%;
+  }
+}
+.footer{
+  margin-top: 350px;
+  margin-left: 72px;
+}
+.foot{
+  color: white;
+  font-family: 'Seculer One', sans-serif;
+  font-weight: bold;
+}
+.fo{
+  text-decoration: none;
+  color: tomato;
+  cursor: crosshair;
+  padding: 5px 10px;
+  border: 2px solid gray;
+  border-radius: 5px;
+}
+.fo:hover{
+  background-color: tomato;
+  color: whitesmoke;
+}
